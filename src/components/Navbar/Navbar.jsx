@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import "./Navbar.css";
 import Menu from "../Menu/Menu";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     const [menuActive, setMenuActive] = useState(false)
@@ -15,10 +16,10 @@ const Navbar = () => {
                         <img src={require('../../media/NavbarImgs/logo.png')} alt="logo" />
                     </div>
                     <ul className='nav'>
-                        <li><a href="./" className="nav_link">Домой</a></li>
-                        <li><a href="() => false" className="nav_link">Подписки</a></li>
-                        <li><a href="() => false" className="nav_link">О нас</a></li>
-                        <li><a href="() => false" className="nav_link">Обратная связь</a></li>
+                        <li><Link to="./" className="nav_link">Домой</Link></li>
+                        <li><Link to="() => false" className="nav_link">Подписки</Link></li>
+                        <li><Link to="() => false" className="nav_link">О нас</Link></li>
+                        <li><Link to="() => false" className="nav_link">Обратная связь</Link></li>
                     </ul>
 
                     <div className="header_input">

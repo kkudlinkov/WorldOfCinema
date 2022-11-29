@@ -15,7 +15,7 @@ const Navbar = () => {
                         <img src={require('../../media/NavbarImgs/logo.png')} alt="logo" />
                     </div>
                     <ul className='nav'>
-                        <li><a href="./main" className="nav_link">Домой</a></li>
+                        <li><a href="./" className="nav_link">Домой</a></li>
                         <li><a href="() => false" className="nav_link">Подписки</a></li>
                         <li><a href="() => false" className="nav_link">О нас</a></li>
                         <li><a href="() => false" className="nav_link">Обратная связь</a></li>
@@ -32,7 +32,7 @@ const Navbar = () => {
 
 
                         <div className="profile">
-                            <a className='profile_block' href="./authentication"><img src={require('../../media/NavbarImgs/profile.png')} alt="profile" /> <span>Войти</span></a>
+                            <a className='profile_block' href="./Authentication"><img src={require('../../media/NavbarImgs/profile.png')} alt="profile" /> <span>Войти</span></a>
                         </div>
 
                         <div className="burger_btn" onClick={() => setMenuActive(!menuActive)}>

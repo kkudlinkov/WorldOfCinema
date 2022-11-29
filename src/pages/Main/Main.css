@@ -1,0 +1,132 @@
+body{
+    background: #0e0e0e;
+    color: #ffffff;
+}
+
+.main{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.sidebar{
+    width: 15%;
+    height: auto;
+    background: #383838;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.sidebar_title{
+    font-size: 24px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.select_title{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.select_element{
+    width: 90%;
+    padding: 5px 5px;
+    font-size: 14px;
+    background: black;
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+
+.format_video{
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+
+.format_block{
+    width: 80%;
+    padding:10px 0;
+    border-radius: 20px;
+    margin: 15px auto;
+    background: black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.format_block:hover{
+    width: 85%;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.mainbar{
+    width: 80%;
+    height: auto;
+    background: #333333;
+    border-radius: 20px;
+}
+
+@media(max-width:991px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .select_element{
+        width: 20%;
+    }
+    .format_video{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .format_block{
+        width: 15%;
+    }
+    .mainbar{
+        width: 100%;
+    }
+}
+
+@media(max-width:600px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar_title {
+        width: 100%;
+    }
+
+    .select_element {
+        width: 60%;
+    }
+
+    .format_video {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .format_block {
+        width: 40%;
+        margin: 10px 15px;
+    }
+
+    .mainbar {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+}

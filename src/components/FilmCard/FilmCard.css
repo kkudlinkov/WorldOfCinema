@@ -1,0 +1,51 @@
+.filmContainer{
+    width: 200px;
+    height: 425px;
+    text-align: center;
+    align-items: center;
+    margin: 20px 40px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    transition: 0.5s;
+}
+.cardImg{
+    width: 100%;
+    height: 75%;
+    /*object-fit: cover;*/
+}
+.cardName{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cardText{
+    height: 30%;
+}
+.cardGenre{
+    font-size: 16px;
+    opacity: 0.75;
+}
+
+.filmContainer:hover{
+    transform: translateY(-10px);
+    box-shadow: 15px 15px 10px black;
+}
+
+@media(max-width:991px){
+    .filmContainer{
+        margin: 15px 20px;
+    }
+}
+
+@media(max-width:600px){
+    .filmContainer{
+        width: 150px;
+        height: 325px;
+        margin: 15px 5px;
+    }
+    .cardName{
+        font-size: 16px;
+    }
+    .cardGenre{
+        font-size: 12px;
+    }
+}

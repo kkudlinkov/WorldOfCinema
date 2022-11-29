@@ -1,0 +1,211 @@
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background: #000000;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.header_logo{
+    width: 100px;
+    height: 100px;
+}
+
+.header_inner img{
+    width: auto;
+    height: 100px;
+}
+
+
+.nav{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    height: 100%;
+}
+
+.nav li{
+    height: 100%;
+    margin-right: 30px;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav_link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav li::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    transition: all 0.3s ease;
+    bottom: 0;
+}
+
+.nav li:hover::after{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.search{
+    display: none;
+}
+
+.header_input{
+    width: 250px;
+    height: 25px;
+}
+
+.header_input input{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: transparent;
+    border: 2px solid rgb(196, 196, 196);
+    outline: none;
+    color: #fff;
+    padding-left: 10px;
+    font-weight:600;
+    transition: 0.75s;
+}
+
+
+.header_input input:focus{
+    opacity: 1;
+    background: #383838;
+}
+
+.header_profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger_btn {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20px;
+    height: 19px;
+    cursor: pointer;
+}
+.burger_btn_fill {
+    width: 18px;
+    height: 3px;
+    background: #fff;
+    border-radius: 1px;
+}
+
+.burger_btn.active{
+    background: red;
+}
+
+
+.profile_block{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.75;
+    transition: 0.6s;
+}
+
+.profile_block:hover{
+    opacity: 1;
+}
+
+.profile img{
+    width: 35px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media(max-width:991px){
+    .nav_link{
+        font-size: 14px;
+    }
+
+    .header,.header_logo,.header_inner img{
+        height: 75px;
+    }
+
+    .header_input{
+        width: 125px;
+        height: 20px;
+    }
+
+    .profile img{
+        width: 25px;
+        height: auto;
+    }
+    .profile_block span{
+        display: none;
+    }
+    .profile_block{
+        opacity: 1;
+    }
+}
+
+@media(max-width:600px){
+    .header_input{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+
+    .search{
+        display:inline;
+        padding-right: 20px;
+    }
+    .search img{
+        width: 22px;
+        height: auto;
+    }
+    .profile img{
+        width: 22px;
+        height: auto;
+        padding-right: 20px;
+    }
+    .burger_btn{
+        display: flex;
+        padding-right: 20px;
+    }
+}

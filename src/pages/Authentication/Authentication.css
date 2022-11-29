@@ -127,7 +127,7 @@ body {
 @media(max-width:992px){
     .register_block{
         max-width: 400px;
-        height: 650px;
+        height: 700px;
         padding: 0;
         margin: 0 20px;
     }
@@ -145,7 +145,7 @@ body {
         top: 0;
     }
     .form-box-right{
-        top: 150px;
+        top: 200px;
         left: 0;
     }
 }

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const Navbar = () => {
     const [menuActive, setMenuActive] = useState(false)
-    const items = [{value:"Главная", href:'/main'}, {value:"Подписки", href:'/subscriptions'}, {value:"О нас", href:'/about'}, {value:"Обратная связь", href:'/feedback'}]
+    const items = [{value:"Главная", to:'/'}, {value:"Подписки", to:'/subscriptions'}, {value:"О нас", to:'/about'}, {value:"Обратная связь", to:'/feedback'}]
 
     return (
         <div className="header">

@@ -33,7 +33,7 @@ const Navbar = () => {
 
 
                         <div className="profile">
-                            <a className='profile_block' href="./Authentication"><img src={require('../../media/NavbarImgs/profile.png')} alt="profile" /> <span>Войти</span></a>
+                            <Link className='profile_block' to="./Authentication"><img src={require('../../media/NavbarImgs/profile.png')} alt="profile" /> <span>Войти</span></Link>
                         </div>
 
                         <div className="burger_btn" onClick={() => setMenuActive(!menuActive)}>

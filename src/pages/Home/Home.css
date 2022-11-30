@@ -35,7 +35,8 @@ body{
 }
 
 .home_inner{
-    width: 100%;
+    width: 80%;
+    height: 100%;
 }
 
 .home__title{
@@ -50,7 +51,7 @@ body{
 
 .buttonStart{
     width: 300px;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
@@ -71,7 +72,6 @@ body{
     transition: all .4s ease-in-out;
 }
 
-
 .buttonStart:focus {
     outline: none;
 }
@@ -80,6 +80,21 @@ body{
     text-decoration: none;
     width: 100%;
     height: 100%;
-    color: white;
-    font-size: 32px;
+}
+
+@media(max-width:600px) {
+    .home{
+        padding: 75px 0;
+    }
+    .home__title{
+        font-size: 24px;
+    }
+    .home__intro{
+        font-size: 16px;
+    }
+    .buttonStart{
+        width: 150px;
+        height: 75px;
+        font-size: 22px;
+    }
 }

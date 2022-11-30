@@ -8,6 +8,7 @@ body{
     align-items: center;
     text-align: center;
     background: black;
+    margin-top: 40px;
 }
 
 .footer_ico svg{

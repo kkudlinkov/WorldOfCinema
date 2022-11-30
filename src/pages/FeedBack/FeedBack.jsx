@@ -6,6 +6,9 @@ const FeedBack = () => {
         <div className="container">
             <div className="contact__form">
                 <div className="contact__wrapper">
+                    <h1 className="contact__title">Contact us</h1>
+                    <p className="contact__intro">Если вы столкнулись с проблемой или же вы хотите подделится идеей для улучшения качества сервиса,
+                        то просто заполните данную форму и мы обязательно вам ответим.</p>
                     <form action="#" name="newform" method="post">
                         <div className="form__inputs">
                             <div className="input_block">

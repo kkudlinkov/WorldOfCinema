@@ -5,7 +5,7 @@ body{
 }
 
 .contact__form{
-    margin: 50px;
+    margin: 30px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,22 @@ body{
     margin: 0 auto;
     color: white;
 }
+
+.contact__title{
+    text-align: center;
+    margin: 30px 50px;
+    padding-bottom: 20px;
+    font-size: 48px;
+    font-weight: 800;
+    border-bottom: 4px solid #bbb5b3;
+}
+
+.contact__intro{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 24px;
+}
+
 .contact__wrapper span{
     color: red;
 }
@@ -106,4 +122,29 @@ body{
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+@media(max-width:600px) {
+    .form__inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .input_block{
+        width: 100%;
+    }
+
+    .button__block{
+        width: 50%;
+    }
+
+    .contact__title{
+        font-size: 32px;
+    }
+    .contact__intro{
+        font-size: 16px;
+    }
+
+    .userMessage{
+        height: 150px;
+    }
 }

@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import "./Navbar.css";
-import Menu from "../Menu/Menu";
 import {Link} from "react-router-dom";
 
 const Navbar = () => {
-    const [menuActive, setMenuActive] = useState(false)
-    const items = [{value:"Главная", to:'/'}, {value:"Подписки", to:'/subscriptions'}, {value:"О нас", to:'/about'}, {value:"Обратная связь", to:'/feedback'}]
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const changeMenu = () => {
+        setMobileMenu(!mobileMenu);
+    };
 
     return (
         <div className="header">
@@ -13,7 +14,7 @@ const Navbar = () => {
                 <div className="background"></div>
                 <div className="header_inner">
                     <div className='header_logo'>
-                        <img src={require('../../media/NavbarImgs/logo.png')} alt="logo" />
+                        <img src={require('../../media/NavbarImgs/logo.png')} alt="logo"/>
                     </div>
                     <ul className='nav'>
                         <li><Link to="./" className="nav_link">Домой</Link></li>
@@ -22,31 +23,36 @@ const Navbar = () => {
                         <li><Link to="() => false" className="nav_link">Обратная связь</Link></li>
                     </ul>
 
-                    <div className="header_input">
-                        <input type="text" placeholder='Найти...' />
-                    </div>
-
                     <div className="header_profile">
-                        <div className="search">
-                            <img src={require('../../media/NavbarImgs/search.png')} alt="search" />
-                        </div>
-
-
                         <div className="profile">
-                            <Link className='profile_block' to="./Authentication"><img src={require('../../media/NavbarImgs/profile.png')} alt="profile" /> <span>Войти</span></Link>
+                            <Link className='profile_block' to="./Authentication"><img
+                                src={require('../../media/NavbarImgs/profile.png')} alt="profile"/>
+                                <span>Войти</span></Link>
                         </div>
 
-                        <div className="burger_btn" onClick={() => setMenuActive(!menuActive)}>
-                            <div className="burger_btn_fill"></div>
-                            <div className="burger_btn_fill"></div>
-                            <div className="burger_btn_fill"></div>
+                        <div className="menuMobile">
+                            <div onClick={changeMenu}>
+                                <div className="menuMobileContainer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                         stroke="currentColor">
+                                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div className= {mobileMenu ? "menuMobileList" : "menuMobileListHidden"}>
+                                <li><Link to='./' className={"desktopLink"}>Главная</Link></li>
+                                <li><Link to="() => false" className={"desktopLink"}>Сервисы</Link></li>
+                                <li><Link to="() => false" className={"desktopLink"}>Контакты</Link></li>
+                                <li><Link to="() => false" className={"desktopLink"}>Войти</Link></li>
+                            </div>
                         </div>
+
 
                     </div>
                 </div>
             </div>
-            <Menu active={menuActive} setActive={setMenuActive} header={"CinemaWorld"} items = {items}/>
         </div>
-    )
-}
+    );
+};
+
 export default Navbar;

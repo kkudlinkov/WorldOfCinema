@@ -1,0 +1,25 @@
+.footer{
+    margin-top: 50px;
+    padding: 20px 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background: black;
+}
+
+.footer_ico svg{
+    width: 50px;
+    fill: white;
+    margin: 10px 20px;
+    opacity: 0.75;
+    transition: 0.2s ease-in-out;
+}
+
+.footer_ico svg:hover{
+    opacity: 1;
+    transform: translateY(-2px);
+}
+.footer_inner p{
+    font-size: 18px;
+    font-weight: 600;
+}

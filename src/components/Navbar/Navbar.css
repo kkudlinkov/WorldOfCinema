@@ -114,27 +114,6 @@ body{
     align-items: center;
 }
 
-.burger_btn {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 20px;
-    height: 19px;
-    cursor: pointer;
-}
-.burger_btn_fill {
-    width: 18px;
-    height: 3px;
-    background: #fff;
-    border-radius: 1px;
-}
-
-.burger_btn.active{
-    background: red;
-}
-
-
 .profile_block{
     height: 100%;
     display: inline-flex;
@@ -167,13 +146,46 @@ body{
 .menuMobileContainer{
     display: block;
     transform: translateX(0);
+    margin: 0 10px;
 }
 
-.menuMobileContainer svg{
+.burgerOn,
+.burgerOn::before,
+.burgerOn::after{
     display: block;
-    width: 35px;
-    height: auto;
+    width: 20px;
+    height: 2px;
+    background: white;
+    transform: rotate(60deg);
+    transition: 0.4s ease-in;
 }
+
+.burgerOn::before{
+    content:'';
+    top: 12px;
+}
+
+.burgerOff,
+.burgerOff::before,
+.burgerOff::after{
+    display: block;
+    position: absolute;
+    width: 20px;
+    right: 0;
+    height: 1px;
+    background: white;
+    transform: rotate(0);
+    transition: 0.4s ease-in-out;
+}
+.burgerOff::before{
+    content: '';
+    top: -8px;
+}
+.burgerOff::after{
+    content: '';
+    top: 8px;
+}
+
 
 .menuMobileList{
     position: absolute;
@@ -237,7 +249,7 @@ body{
         display: flex;
     }
     .profile img{
-        width: 22px;
+        width: 24px;
         height: auto;
         padding-right: 20px;
     }

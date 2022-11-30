@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Main.css"
 import Film from "../../components/Film/Film";
+import Slider from "../../components/Slider/Slider";
 
 const Main = () => {
 
@@ -8,10 +9,11 @@ const Main = () => {
         <div>
             <div className="container">
                 {/*Слайдер*/}
+                <Slider />
+                {/*Главная страница с кино*/}
                 <div className="main">
                     <aside className="sidebar">
                         <h3 className="sidebar_title">Навигация</h3>
-
                         <label className="select_title" htmlFor="genre-select">Жанр</label>
                         <select className="select_element" name="pets" id="genre-select">
                             <option value="">--Выберите жанр--</option>

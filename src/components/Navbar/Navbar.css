@@ -146,14 +146,15 @@ body{
 .menuMobileContainer{
     display: block;
     transform: translateX(0);
-    margin: 0 10px;
+    margin-right: 20px;
+    width: 25px;
 }
 
 .burgerOn,
 .burgerOn::before,
 .burgerOn::after{
     display: block;
-    width: 20px;
+    width: 25px;
     height: 2px;
     background: white;
     transform: rotate(60deg);
@@ -162,7 +163,6 @@ body{
 
 .burgerOn::before{
     content:'';
-    top: 12px;
 }
 
 .burgerOff,
@@ -203,7 +203,6 @@ body{
 .menuMobileListHidden{
     display: none;
     transform: translateX(100%);
-    right: 20px;
 }
 
 .menuMobileList Li{
@@ -251,7 +250,7 @@ body{
     .profile img{
         width: 24px;
         height: auto;
-        padding-right: 20px;
+        margin-right: 20px;
     }
     .burger_btn{
         display: flex;

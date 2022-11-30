@@ -4,14 +4,18 @@ import {Routes, Route} from "react-router-dom";
 import Main from "./pages/Main/Main";
 import Authentication from "./pages/Authentication/Authentication";
 import Footer from "./components/Footer/Footer";
+import FeedBack from "./pages/FeedBack/FeedBack";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <div>
         <Navbar />
         <Routes>
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/main" element={<Main />} />
             <Route path="/Authentication" element={<Authentication />} />
+            <Route path="/feedback" element={<FeedBack/>}/>
         </Routes>
         <Footer />
     </div>

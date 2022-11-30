@@ -1,7 +1,10 @@
+body{
+    background: #0e0e0e;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .footer{
-    margin-top: 50px;
-    padding: 20px 0;
-    width: 100%;
     align-items: center;
     text-align: center;
     background: black;

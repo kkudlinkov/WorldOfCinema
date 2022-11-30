@@ -14,13 +14,15 @@ const Navbar = () => {
                 <div className="background"></div>
                 <div className="header_inner">
                     <div className='header_logo'>
-                        <img src={require('../../media/NavbarImgs/logo.png')} alt="logo"/>
+                        <Link to="./">
+                            <img src={require('../../media/NavbarImgs/logo.png')} alt="logo"/>
+                        </Link>
                     </div>
                     <ul className='nav'>
-                        <li><Link to="./" className="nav_link">Домой</Link></li>
+                        <li><Link to="./main" className="nav_link">Главная</Link></li>
                         <li><Link to="() => false" className="nav_link">Подписки</Link></li>
                         <li><Link to="() => false" className="nav_link">О нас</Link></li>
-                        <li><Link to="() => false" className="nav_link">Обратная связь</Link></li>
+                        <li><Link to="./feedback" className="nav_link">Обратная связь</Link></li>
                     </ul>
 
                     <div className="header_profile">
@@ -33,14 +35,14 @@ const Navbar = () => {
                         <div className="menuMobile" onClick={changeMenu}>
                             <div className="menuBtn">
                                 <div className="menuMobileContainer">
-                                    <span className={mobileMenu? "burgerOn" : "burgerOff"}></span>
+                                    <span className={mobileMenu ? "burgerOn" : "burgerOff"}></span>
                                 </div>
                             </div>
-                            <div className= {mobileMenu ? "menuMobileList" : "menuMobileListHidden"}>
-                                <li><Link to='./' className={"desktopLink"}>Главная</Link></li>
+                            <div className={mobileMenu ? "menuMobileList" : "menuMobileListHidden"}>
+                                <li><Link to='./main' className={"desktopLink"}>Главная</Link></li>
                                 <li><Link to="() => false" className={"desktopLink"}>Сервисы</Link></li>
-                                <li><Link to="() => false" className={"desktopLink"}>Контакты</Link></li>
-                                <li><Link to="() => false" className={"desktopLink"}>Войти</Link></li>
+                                <li><Link to="./feedback" className={"desktopLink"}>Обратная связь</Link></li>
+                                <li><Link to="./Authentication" className={"desktopLink"}>Войти</Link></li>
                             </div>
                         </div>
 

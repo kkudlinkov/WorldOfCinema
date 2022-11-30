@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="container">
                 <div className="footer_inner">
                     <p className="footer_name">Сайт создан студентом группы ИКБО-01-21 Кудллинков Николай Сергеевич</p>
@@ -25,8 +25,7 @@ const Footer = () => {
                     <p>Москва - 2022</p>
                 </div>
             </div>
-
-        </div>
+        </footer>
     );
 }
 

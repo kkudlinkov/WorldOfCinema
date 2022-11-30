@@ -1,0 +1,85 @@
+body{
+    background: #0e0e0e;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home{
+    margin: 50px 0;
+    padding: 200px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: #262626;
+    border-radius: 20px;
+    position: relative;
+}
+
+.home:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.home_inner{
+    width: 100%;
+}
+
+.home__title{
+    margin: 50px 0;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.home__intro{
+    font-size: 28px;
+}
+
+.buttonStart{
+    width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 50px 0;
+    height: 100px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.buttonStart:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+
+.buttonStart:focus {
+    outline: none;
+}
+
+.buttonLink{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 32px;
+}

@@ -30,8 +30,8 @@ const Navbar = () => {
                                 <span>Войти</span></Link>
                         </div>
 
-                        <div className="menuMobile">
-                            <div onClick={changeMenu}>
+                        <div className="menuMobile" onClick={changeMenu}>
+                            <div className="menuBtn">
                                 <div className="menuMobileContainer">
                                     <span className={mobileMenu? "burgerOn" : "burgerOff"}></span>
                                 </div>

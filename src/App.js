@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 import {Routes, Route} from "react-router-dom";
 import Main from "./pages/Main/Main";
 import Authentication from "./pages/Authentication/Authentication";
@@ -12,7 +12,7 @@ import History from "./pages/History/History";
 function App() {
   return (
     <div>
-        <Navbar />
+        <Header />
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/main" element={<Main />} />

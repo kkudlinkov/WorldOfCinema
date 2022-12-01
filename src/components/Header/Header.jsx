@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import "./Navbar.css";
+import "./Header.css";
 import {Link} from "react-router-dom";
 
-const Navbar = () => {
+const Header = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
     const changeMenu = () => {
         setMobileMenu(!mobileMenu);
@@ -55,4 +55,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Header;

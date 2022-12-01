@@ -5,6 +5,11 @@ import cn from "classnames";
 const Authentication = () => {
     const [SignState, setSignState] = useState(false);
 
+    const registrationSuccess = () =>{
+        alert("Вы успешно зарегестрировались!")
+
+    }
+
     return (
         <div className="container">
             <div className="register_form">
@@ -60,7 +65,7 @@ const Authentication = () => {
                                 <input type="password" className="form__input" placeholder="Повторите пароль"/>
                             </p>
                             <p>
-                                <button className="form__btn">Зарегистрироваться</button>
+                                <button onClick={(registrationSuccess)} className="form__btn">Зарегистрироваться</button>
                             </p>
                         </div>
                     </div>

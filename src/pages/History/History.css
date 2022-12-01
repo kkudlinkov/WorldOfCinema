@@ -1,0 +1,85 @@
+.historyPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+}
+.history__inner{
+    width: 100%;
+    align-items: center;
+    background: #383838;
+    border-radius: 45px;
+    margin: 0 50px;
+}
+.history__title{
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px 0;
+}
+.mainHistoryPosterImg{
+    width: 700px;
+    margin: 50px;
+}
+
+.historyBlockInfo{
+    margin: 20px 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid silver;
+}
+
+.historyTitleText{
+    font-size: 32px;
+    margin: 15px auto;
+}
+.historyText{
+    font-size: 18px;
+}
+.brothersPosterImg{
+    margin: 50px;
+    width: 700px;
+}
+.trainPosterImg{
+    width: 500px;
+    margin: 50px;
+}
+.finalPosterImg{
+    width: 700px;
+    margin: 50px;
+}
+
+@media(max-width:600px){
+    .historyBlockInfo{
+        margin: 20px 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid silver;
+    }
+    .history__title{
+        font-size: 24px;
+        font-weight: 800;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .historyTitleText{
+        font-size: 22px;
+    }
+    .historyText{
+        font-size: 16px;
+    }
+    .mainHistoryPosterImg{
+        width: 300px;
+        margin: 10px 10px;
+    }
+    .brothersPosterImg{
+        width: 300px;
+        margin: 10px 0;
+    }
+    .trainPosterImg{
+        width: 250px;
+        margin: 10px 0;
+    }
+    .finalPosterImg{
+        width: 300px;
+        margin: 10px 0;
+    }
+}

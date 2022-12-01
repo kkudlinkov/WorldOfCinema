@@ -1,0 +1,40 @@
+.GenreContainer{
+    width: 100%;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid silver;
+}
+
+.GenreTittle{
+    font-size: 36px;
+    text-align: left;
+    margin: 50px 0;
+}
+
+.GenreImg{
+    width: 600px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.GenreDescription{
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+@media(max-width:600px){
+    .GenreContainer{
+        width: 80%;
+    }
+    .GenreTittle{
+        font-size: 24px;
+    }
+    .GenreImg{
+        width: 300px;
+    }
+    .GenreDescription{
+        font-size: 18px;
+        text-align: left;
+    }
+}

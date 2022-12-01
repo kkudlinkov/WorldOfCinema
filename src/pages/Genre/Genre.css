@@ -1,0 +1,96 @@
+.genre{
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.genre__inner{
+    width: 100%;
+}
+
+.genre__title{
+    font-size: 36px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.navigationBlock{
+    width: 60%;
+    height: auto;
+    background: #2a2a2a;
+    margin: 50px 50px;
+}
+.navigationInner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navigationTitle{
+    font-size: 24px;
+    margin: 20px;
+}
+.NavigateButtonList{
+    width: 15px;
+    height: auto;
+    transform: rotate(0deg);
+    transition: 0.4s;
+    fill: #ffffff;
+}
+.NavigateButtonListRotate{
+    width: 15px;
+    height: auto;
+    transform: rotate(90deg);
+    fill: #ffffff;
+    transition: 0.4s;
+}
+.genreListOpen{
+    margin: 0 60px;
+    transition: 0.4s ease-out;
+    padding-top: 0;
+
+}
+.genreListHidden{
+    display: none;
+    transition: 0.4s;
+}
+
+.genreElement{
+    font-size: 22px;
+    margin: 10px;
+}
+
+
+.genreElement a{
+    text-decoration: none;
+    color: white;
+}
+
+.genre_intro{
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #383838;
+}
+@media(max-width:600px){
+    .genre__title{
+        font-size:24px;
+    }
+    .navigationBlock{
+        width: 75%;
+    }
+    .navigationTitle{
+        font-size: 18px;
+    }
+    .genreElement{
+        font-size: 16px;
+    }
+
+    .genre_intro{
+        font-size: 18px;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+

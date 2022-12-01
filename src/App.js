@@ -6,6 +6,7 @@ import Authentication from "./pages/Authentication/Authentication";
 import Footer from "./components/Footer/Footer";
 import FeedBack from "./pages/FeedBack/FeedBack";
 import Home from "./pages/Home/Home";
+import Genre from "./pages/Genre/Genre";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/main" element={<Main />} />
             <Route path="/Authentication" element={<Authentication />} />
             <Route path="/feedback" element={<FeedBack/>}/>
+            <Route path="/genre" element={<Genre/>}/>
         </Routes>
         <Footer />
     </div>

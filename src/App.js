@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/main" element={<Main />} />
+            <Route path="/catalog" element={<Main />} />
             <Route path="/Authentication" element={<Authentication />} />
             <Route path="/feedback" element={<FeedBack/>}/>
             <Route path="/genre" element={<Genre/>}/>

@@ -7,7 +7,6 @@ const Header = () => {
     const changeMenu = () => {
         setMobileMenu(!mobileMenu);
     };
-
     return (
         <div className="header">
             <div className="container">
@@ -19,19 +18,17 @@ const Header = () => {
                         </Link>
                     </div>
                     <ul className='nav'>
-                        <li><Link to="./main" className="nav_link">Главная</Link></li>
+                        <li><Link to="./catalog" className="nav_link">Каталог</Link></li>
                         <li><Link to="./history" className="nav_link">История кино</Link></li>
-                        <li><Link to="./genre" className="nav_link">Жанр фильмов</Link></li>
+                        <li><Link to="./genre" className="nav_link">Жанры фильмов</Link></li>
                         <li><Link to="./feedback" className="nav_link">Обратная связь</Link></li>
                     </ul>
-
                     <div className="header_profile">
                         <div className="profile">
                             <Link className='profile_block' to="./Authentication"><img
                                 src={require('../../media/NavbarImgs/profile.png')} alt="profile"/>
                                 <span>Войти</span></Link>
                         </div>
-
                         <div className="menuMobile" onClick={changeMenu}>
                             <div className="menuBtn">
                                 <div className="menuMobileContainer">
@@ -39,15 +36,13 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className={mobileMenu ? "menuMobileList" : "menuMobileListHidden"}>
-                                <li><Link to='./main' className={"desktopLink"}>Главная</Link></li>
+                                <li><Link to='./catalog' className={"desktopLink"}>Каталог</Link></li>
                                 <li><Link to="./history" className={"desktopLink"}>История фильмов</Link></li>
-                                <li><Link to="./genre" className={"desktopLink"}>Жанр фильмов</Link></li>
+                                <li><Link to="./genre" className={"desktopLink"}>Жанры фильмов</Link></li>
                                 <li><Link to="./feedback" className={"desktopLink"}>Обратная связь</Link></li>
                                 <li><Link to="./Authentication" className={"desktopLink"}>Войти</Link></li>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>

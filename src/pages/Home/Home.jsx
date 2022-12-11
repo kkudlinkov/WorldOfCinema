@@ -11,7 +11,7 @@ const Home = () => {
                     <p className="home__intro">Это ознакомительный проект в котором ты сможешь найти все нужные тебе
                         фильмы и узнать любую информацию по ним.
                         <br/>Так что не теряй времени и присутпай скорее!</p>
-                    <Link className="buttonLink" to="./main">
+                    <Link className="buttonLink" to="./catalog">
                         <button className="buttonStart"> Начать!</button>
                     </Link>
                 </div>

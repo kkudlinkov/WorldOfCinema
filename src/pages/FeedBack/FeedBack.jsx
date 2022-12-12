@@ -25,7 +25,7 @@ const FeedBack = () => {
                     <p>Message<span>*</span></p>
                     <textarea className="userMessage" name="text"></textarea>
                     <div onClick={(feedbackForm)} className="button__block">
-                        <button className="glow-on-hover">Send</button>
+                        <button className="glow-on-hover">Отправить</button>
                     </div>
                 </div>
             </div>

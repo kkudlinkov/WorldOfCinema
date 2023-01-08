@@ -1,9 +1,9 @@
 .filmContainer{
     width: 200px;
-    height: 425px;
+    height: 450px;
     text-align: center;
     align-items: center;
-    margin: 20px 40px;
+    margin: 20px 15px;
     cursor: pointer;
     box-shadow: 5px 5px 5px black;
     transition: 0.5s;

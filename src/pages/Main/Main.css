@@ -1,21 +1,16 @@
-body{
-    background: #0e0e0e;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .main{
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 20px;
+
 }
 
 .sidebar{
     width: 15%;
     height: auto;
-    background: #383838;
+    background: #2a2a2a;
     align-items: center;
     border-radius: 20px;
 
@@ -43,6 +38,7 @@ body{
 }
 
 .format_video{
+    padding: 0;
     width: 100%;
     margin-top: 20px;
     align-items: center;
@@ -52,10 +48,10 @@ body{
 
 
 .format_block{
+    margin: 15px auto;
     width: 80%;
     padding:10px 0;
     border-radius: 20px;
-    margin: 15px auto;
     background: black;
     cursor: pointer;
     transition: 0.2s;
@@ -70,7 +66,7 @@ body{
 .mainbar{
     width: 80%;
     height: auto;
-    background: #333333;
+    background: #2a2a2a;
     border-radius: 20px;
 }
 
